@@ -23,6 +23,13 @@ function mouseClicked() {
 
 function draw() {
   background(0, 0, 0, 15); 
+  var myText = "Click as much as you want :)";
+  
+  textFont("Noto Sans Display");
+  textAlign(CENTER);
+  textSize(15);
+  fill(200);
+  text(myText, width/2, height/6);
   //the loop gets all the instances kpt in the array and runs them so that they will be displayed
   for (let i = 0; i < myCharacters.length; i++) {
     myCharacters[i].run();
